@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Profit Analysis Year 2013 to 2014 Uding Microsoft Excel</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+	
+img {
+  width: auto%;
+  height: auto;
+}
+
+.column {
+float:left;
+width:33.33%;
+padding:1%;
+}
+
+.row:after {
+content:"";
+clear: both;
+display: table;
+}
+
+.button {
+  background-color:rgba(255, 165, 0, 0.75);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  height:50px;
+  width:50px;
+
+}
+
+.button1:hover {
+  background-color:rgba(255, 165, 0, 1);
+  color: white;
+  }
+  
+  
+.button1 {border-radius: 50%;}
+
+
+/* ORIGINAL CODE*/
+
+ul, li{
+	display:inline;
+	}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image:url("images/bg_blur.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  margin:0;
+
+}
+
+img {
+	
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+
+	}
+#table1{
+	background-color: rgba(127, 255,0, 0.30);
+	 border-radius: 10px;
+	 border: 2px solid orange;
+	}
+
+#table2, td, th{
+	border: 1px solid orange;
+	border-collapse: collapse;
+	font-weight: normal;
+	font-size: 12px;
+	padding: 3px
+	}
+	
+tr{
+	font-weight: normal;	
+	}
+
+	
+table.center {
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+
+article {
+  float: left;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  width: 100%;
+  text-align:justify;
+  font-family: "times new roman", times new roman;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: normal;
+	
+}
+h1 {
+text-align:center;
+
+}
+
+h3 {
+font-weight: bold;
+font-size: 20px;
+}
+
+h4 {
+font-weight: normal;
+font-size:12px;
+text-align:justify;
+}
+
+caption {
+  font-weight: normal;
+  text-align: left;
+  font-size: 15px;
+}
+</style>
+
+<body>
+
+<br>
+<br>
+<div class="content">
+<table id="table1" class="center" style="width:90%">
+<tr>
+<th>
+  <article>
+	<div align="right">
+	<a href="portfolio.html"><button class="button button1">X</button></a>
+	</div>
+	
+    <h1>Profit Analysis Year 2013 to 2014 Using Microsoft Excel</h1>
+	
+	<h3>Background</h3>
+	<p>&emsp;&emsp; One of the highlights in my portfolio is the dashboard I created to take a mentorship program entitled " Data Viz and Story Telling with Data"
+	 led by Data Sense Analytics. Through this dashboard, I showed my expertise in using Data Visualization Tools, performing Data Preparation, Modeling, Analysis,
+	 and Visualization. Additionally, the dashboard I created showcases my skills in making informed decisions based on data-driven insights.
+	
+	<h3>Business Task</h3>
+	<span>&emsp;&emsp; 1. Which Month and Year had the most profit?</span>
+	<br>
+	<span>&emsp;&emsp; 2. Where is the company seeing the most success (by country/region)?</span>
+	<br>
+	<span>&emsp;&emsp; 3. Which product and segment should the company continue to invest in?</span>
+	
+	<h3>Data Overview</h3>
+	<center>
+	<table id="table2">
+	<caption>Table 1: Details of Selected Dataset.</caption>
+	<tr>
+	<th>File Name</th>
+	<th>Rows</th>
+	<th>Column Name</th>
+	<th>Integrity Status</th>
+	</tr>
+	<tr>
+	<th>Canada.csv, France.csv, Germany.csv, Mexico.csv, USA.csv</th>
+	<th>140</th>
+	<th>Segment, Country, Product, Discount Band, Unit Sold, Manufacturing Price, Sale Price, Gross Sales, Discounts, Sales, COGS, Profit, Date</th>
+	<th>No duplicates, No nulls,</th>
+	</tr>
+	</table>
+	</center>
+	
+	<h3>Data Source</h3>
+	<p>&emsp;&emsp; The dataset was provided and modified by Data Sense Analytics that can be find at
+	<a href="https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-excel-stunning-report">https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-excel-stunning-report</a>.</p>
+	
+	<h3>Dashboard</h3>
+	<center><span>Figure 1: Profit Analysis Dashboard</span></center>
+	<a href="images/dashboard/profit.png"><span class="image main"><img src="images/dashboard/profit.png" alt="Description of the image" style="width:100%;"/></span></a>
+  
+	<h3>Executive Summary</h3>
+	<p>&emsp;&emsp;Based on data presented, the most profitable Month was December with the total profit of 2.7 Million
+	and the most profitable year was 2014 with the total profit of 16.8 Million. </p>
+	
+	<p>&emsp;&emsp; The most successful country when it comes to profit was France with the total of  3.78 Million followed by 
+	Germany with the total of 3.68 Million.</p>
+	
+	<p>&emsp;&emsp; Since the most profitable product is Paseo with the total profit of 4.8 Million and the most profitable Segment is Government
+	with the total profit of 11.39 Million, the company should continue to invest in Paseo as a product and Government as a segment.</p>
+	
+	<h3>Recommendations</h3>
+	<p>&emsp;&emsp; <b>Increase Focus on  the French and German Markets:</b> Since these markets have been the most successful in terms of profitability,
+	the company could consider increasing their efforts in these countries. They could conduct market research to understand the consumer behavior, preferences, and trends
+	in these countries to develop targeted marketing strategies.</p>
+	
+	<p>&emsp;&emsp; <b>Increase Production of Paseo:</b> Since it is the most profitable product, the company could consider increasing its production 
+	to meet the demand for this product. This could involve increasing the capacity of their production facilities or investing in new technologies
+	to optimize their production process.</p>
+	
+	<p>&emsp;&emsp; <b>Focus on the Government Segment:</b> Since the Government is the most profitable for the company, they could consider developing new products 
+	or services that cater to the needs of this segment. This could involve collaborating with government agencies to understand their requirements 
+	and developing customized solutions.</p>
+	
+	<p>&emsp;&emsp; <b>Optimize Marketing and Sales Efforts During December:</b> The company could leverage social media, email marketing and other channels to promote
+	their products and services and offer incentives to customers to drive sales.</p>
+	
+	<p>&emsp;&emsp; <b>Evaluate and Learn from the Success in 2014:</b> The company should evaluate what they did right in 2014 to make it the most profitable year 
+	and learn from those experiences. They could implement similar strategies or explore new opportunities that align with their strengths and capabilities 
+	to drive future growth.</p>
+  
+  
+  <div align="right">
+	<a href="portfolio.html"><button class="button button1">X</button></a>
+	</div>
+  </article>
+</th>
+</tr>
+
+  </table>
+ <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+<br>
+<br>
+<br>
+</div>
+
+</html>
+

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>2019 Sales Report</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+	
+img {
+  width: auto%;
+  height: auto;
+}
+
+.column {
+float:left;
+width:33.33%;
+padding:1%;
+}
+
+.row:after {
+content:"";
+clear: both;
+display: table;
+}
+
+.button {
+  background-color:rgba(255, 165, 0, 0.75);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  height:50px;
+  width:50px;
+
+}
+
+.button1:hover {
+  background-color:rgba(255, 165, 0, 1);
+  color: white;
+  }
+  
+  
+.button1 {border-radius: 50%;}
+
+
+/* ORIGINAL CODE*/
+
+ul, li{
+	display:inline;
+	}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image:url("images/bg_blur.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  margin:0;
+
+}
+
+img {
+	
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+
+	}
+#table1{
+	background-color: rgba(127, 255,0, 0.30);
+	 border-radius: 10px;
+	 border: 2px solid orange;
+	}
+
+#table2, td, th{
+	border: 1px solid orange;
+	border-collapse: collapse;
+	font-weight: normal;
+	font-size: 14px;
+	padding: 3px
+	}
+	
+tr{
+	font-weight: normal;	
+	}
+
+	
+table.center {
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+
+article {
+  float: left;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  width: 100%;
+  text-align:justify;
+  font-family: "times new roman", times new roman;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: normal;
+	
+}
+h1 {
+text-align:center;
+
+}
+
+h3 {
+font-weight: bold;
+font-size: 20px;
+}
+
+h4 {
+font-weight: normal;
+font-size:12px;
+text-align:justify;
+}
+
+caption {
+  font-weight: normal;
+  text-align: left;
+  font-size: 15px;
+}
+</style>
+
+<body>
+
+<br>
+<br>
+<div class="content">
+<table id="table1" class="center" style="width:90%">
+<tr>
+<th>
+  <article>
+	<div align="right">
+	<a href="portfolio.html"><button class="button button1">X</button></a>
+	</div>
+	
+    <h1>2019 Sales Report Using Microsoft Power BI</h1>
+	
+	<h3>Background</h3>
+	<p>&emsp;&emsp;Sales Analytics is the best practice of generating insights from sales data, trends, and metrics to set targets 
+	and forecast future sales performance. Sales Analysis is mining your data to evaluate the performance of your sales team against its goals. 
+	It provides insights about the top performing and underperforming products/service, the problems in selling and market opportunities, sales 
+	forecasting, and sales activities that generate revenue.
+	</p>
+	
+	<h3>Business Task</h3>
+	<span>&emsp;&emsp; 1. What was the best year for sales? How much was earned that year?</span>
+	<br>
+	<span>&emsp;&emsp; 2. What was the best month for sales? What was How much was earned that month?</span>
+	<br>
+	<span>&emsp;&emsp; 3. What city had the highest number of sales?</span>
+	<br>
+	<span>&emsp;&emsp; 4. What time should we display the advertisement to maximize likelihood of customer’s buying product?</span>
+	<br>
+	<span>&emsp;&emsp; 5. What product is most often sold?</span>
+	<br>
+	<span>&emsp;&emsp; 6. What product sold the most?</span>
+	
+	<h3>Data Overview</h3>
+	<center>
+	<table id="table2">
+	<caption>Table 1: Data Dictionary</caption>
+	<tr>
+	<th>Content</th>
+	<th>About</th>
+
+
+	</tr>
+	<tr>
+	<th>Order ID</th>
+	<th>The number ID that the Amazon uses exclusively to keep track of orders. Each orders receives its own order ID that will not be duplicated.
+	This number can be useful to the seller when attempting to find out certian details about an order such as shipment date and status.</th>
+	</tr>
+	
+	</tr>
+	<tr>
+	<th>Product</th>
+	<th>The product that have been sold.</th>
+	
+	</tr>
+	<tr>
+	<th>Quantity Ordered</th>
+	<th>Total item quantity ordered in the initial order(without any charges).</th>
+	</tr>
+	
+	</tr>
+	<tr>
+	<th>Price Each</th>
+	<th>The price of each products</th>
+	</tr>
+	
+	</tr>
+	<tr>
+	<th>Order Date</th>
+	<th>This id the date the customer is requesting the order be shipped.</th>
+	
+	</tr>
+	<tr>
+	<th>Purchase Address</th>
+	<th>Prepared by the buyer, often through a purchasing department. The purchase order or PO, usually includes a PO number, which is useful in matching
+	shipments with purchases.</th>
+	</tr>
+	</table>
+	</center>
+	
+	<h3>Data Source</h3>
+	<p>&emsp;&emsp; The dataset has 10.00 usabilty, CCO: Public Domain License and can be find at kaggle by KNIGHTBEARR.
+	
+	
+	<h3>Dashboard</h3>
+	<center><span>Figure 1: Profit Analysis Dashboard</span></center>
+	<a href="images/dashboard/sales.png"><span class="image main"><img src="images/dashboard/sales.png" alt="Description of the image" style="width:100%;"/></span></a>
+  
+	<h3>Executive Summary</h3>
+	<p>&emsp;&emsp; The best year for sales was year 2019 with 34.48 Million total earned while the best month for sales was December 2019 with 
+	4.67 Million total earned. The city with the highest sales was San Francisto City with 8.38 Million total earned. The time that the amazon should display 
+	the advertisement to maximize likelihood of customer's buying product was 11:00 AM to 1:00 PM and 6:00 PM to 8:00 PM. The most often sold product is AAA Batteries
+	(4 Packs) and the product sold the most is Macbook Pro Laptop.</p>
+	
+  
+  <div align="right">
+	<a href="portfolio.html"><button class="button button1">X</button></a>
+	</div>
+  </article>
+</th>
+</tr>
+
+  </table>
+ <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+<br>
+<br>
+<br>
+</div>
+
+</html>
+
