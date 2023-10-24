@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bellabeat Case Study</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+float:left;
+width:33.33%;
+padding:1%;
+}
+
+.row:after {
+content:"";
+clear: both;
+display: table;
+}
+
+img {
+  width: auto%;
+  height: auto;
+}
+
+.responsive{
+	width:100%;
+	max-width: 350px;
+	height:100%;
+	}
+
+.responsive2{
+	width:100%;
+	max-width: 300px;
+	height:100%;
+	}
+
+.button {
+  background-color:rgba(255, 165, 0, 0.75);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  height:50px;
+  width:50px;
+
+}
+
+.button1:hover {
+  background-color:rgba(255, 165, 0, 1);
+  color: white;
+  }
+  
+  
+.button1 {border-radius: 50%;}
+
+
+/* ORIGINAL CODE*/
+
+
+ul.a{
+	display:inline;
+	list-style-type: circle;
+	}
+	
+ul.b{
+	display:inline;
+	list-style-type: square;
+	}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  margin:0;
+
+}
+
+img {
+	
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+
+	}
+#table1{
+	background-color: rgba(253, 244,201,100);
+	 border-radius: 10px;
+	 border: 2px solid orange;
+	}
+
+#table2, td, th{
+	border: 1px solid orange;
+	border-collapse: collapse;
+	font-weight: normal;
+	font-size: 12px;
+	padding: 3px
+	}
+		
+tr{
+	font-weight: normal;	
+	}
+
+td{
+	text-align:center;
+	font-weight: bold;
+	}
+	
+table.center {
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+
+article {
+  float: left;
+   padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  width: 100%;
+  text-align:justify;
+  font-family: "times new roman", times new roman;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: normal;
+	
+}
+p3 {
+font-weight: bold;
+font-size: 20px;
+color: #FF8C00;
+}
+
+p4 {
+font-weight: bold;
+font-size: 12px;
+color: #545454;
+}
+
+p5 {
+font-weight: bold;
+font-size: 16px;
+color: #ff8c00;
+}
+
+h4 {
+font-weight: normal;
+font-size:12px;
+text-align:justify;
+}
+
+
+h5 {
+font-weight: normal;
+font-size:12px;
+text-align:justify;
+}
+
+h6 {
+font-weight: normal;
+font-size:12px;
+text-align:justify;
+}
+
+p2 {
+font-weight: bold;
+font-size: 18px;
+color: #545454;
+}
+
+caption {
+  font-weight: normal;
+  text-align: left;
+  font-size: 15px;
+}
+hr{
+		height:4px;
+		background-color:#545454;
+		border:none;
+		
+		}
+		
+</style>
+
+<body>
+
+<br>
+<br>
+<div class="content">
+<table id="table1" class="center" style="width:90%">
+<tr>
+<th>
+  <article>
+	<div align="right">
+	<a href="portfolio.html"><button class="button button1">X</button></a>
+	</div>
+	
+    <h1><center>Case Study: How Can a Wellness Technology <br>
+	Company Play It Smart?</center></h1>
+	<a href="images/proj/bellabeat.png"><img src="images/proj/bellabeat.png" alt="logo" class="responsive" width="600" height="400"></a>
+	<!--
+	<a href="images/proj/bellabeat.png"><span class="image main"><img src="images/proj/bellabeat.png" alt="Description of the image" style="width:30%;" /></span></a>
+	-->
+	<br>
+	<hr><!-- the division gray line -->
+	<br>
+	
+	<p3>INTRODUCTION</P3> <br>
+	In this case study, Data Analyst performed many real worlds task of a Junior Data Analyst. They Imagined that they are working for Bellabeat, 
+			a high-tech manufacturer of health-focus products for women, and meet different charaters and team members. In order to answer business 
+			questions, data analyst followed the steps of the data analysis process <b> Ask, Prepare, Process, Analyze, Share, and Act.</b>
+	<br>
+	<br>
+	<p3>Scenario</p3><br>
+	Bellabeat is a successful small company, but they have the potential to become a larger player in the
+			global smart device market. Urška Sršen, cofounder and Chief Creative Officer of Bellabeat, believes that analyzing smart
+			device fitness data could help unlock new growth opportunities for the company. Data Analyst have been asked to focus on one of
+			Bellabeat’s products and analyze smart device data to gain insight into how consumers are using their smart devices. The
+			insights that they discover will then help guide marketing strategy for the company. Data Analyst present their analysis to the Bellabeat
+			executive team along with their high-level recommendations for Bellabeat’s marketing strategy.
+	<br>
+	<br>
+	<p3> Characters and Products</p3><br>
+	&emsp;<b> Characters</b><br>
+	&emsp;&emsp;<p2>Urška Sršen:</p2> Bellabeat’s cofounder and Chief Creative Office.<br>
+	&emsp;&emsp;<p2>Sando Mur:</p2> Mathematician and Bellabeat’s cofounder; key member of the Bellabeat executive team.<br>
+	&emsp;&emsp;<p2>Bellabeat marketing analytics team:</p2> A team of data analysts responsible for collecting, analyzing, and
+			reporting data that helps guide Bellabeat’s marketing strategy.<br><br>
+	&emsp;<b>Products</b><br>
+	&emsp;&emsp;<p2>Bellabeat app:</p2> The Bellabeat application offers users information on their activity, 
+	sleep, stress, menstrual cycle, and mindfulness patterns to help them gain insight into their habits 
+	and make healthier choices. Additionally, users can link the Bellabeat app with their range of smart wellness products.
+	<br><br>&emsp;&emsp;<p2>Leaf:</p2> Bellabeat’s classic wellness tracker can be worn as a bracelet, necklace, or clip. The Leaf tracker connects
+		to the Bellabeat app to track activity, sleep, and stress.
+	<br><br>&emsp;&emsp;<p2>Time:</p2> This wellness watch combines the timeless look of a classic timepiece with smart technology to track user
+	activity, sleep, and stress. The Time watch connects to the Bellabeat app to provide you with insights into your
+	daily wellness.
+	<br><br>&emsp;&emsp;<p2>Spring:</p2> This is a water bottle that tracks daily water intake using smart technology to ensure that you are
+	appropriately hydrated throughout the day. The Spring bottle connects to the Bellabeat app to track your
+	hydration levels.
+	<br><br>&emsp;&emsp;<p2>Bellabeat membership:</p2> Bellabeat also offers a subscription-based membership program for users.
+	Membership gives users 24/7 access to fully personalized guidance on nutrition, activity, sleep, health and
+	beauty, and mindfulness based on their lifestyle and goals.<br><br>
+	<br>
+	<br>
+	<hr style="width:100%">
+	<p3> DATA ANALYSIS</p3>
+	<br>
+	<br>
+	<p3> Ask Phase : </p3> It is a clear statement of a Business Task.<br><br>
+	<p2>Business Task :</p2><br>
+	Identify trends on how consumers use Bellabeat smart devices by focusing in one bellabeat product and analyze smart device data to gain insight 
+				into how consumers are using their smart devices.
+	<br>
+	<br>
+	<p3> Prepare Phase : </p3> A description of all data sources and used.<br><br>
+	<p2>Specific Dataset:</p2> The dataset used was Fitbit Tracker data  from Kaggle and was made available through Mobius.<br>
+	<p2>Descriptions :</p2> This Kaggle dataset contains a personal fitness tracker from thirty eligible users. Thirty eligible users consented to the 
+				submission of personal tracker data, including minute level output for physical activity, heart rate, and sleep monitoring. The dataset 
+				was under an open source CCO 1.0 Universal license, which indicates that the person who associated the work with this deed has surrendered 
+				all their rights to the work worldwide under copyright law and has dedicated it to the public domain.
+	<br>
+	<br>
+	<p3> Process Phase :</p3> Documentation of any cleaning and manipulation of data.<br><br>
+	<p2>Tool used :</p2> Data Analyst used Microsoft Excel since it performs data organizations, basic calculations, filtering and sorting, data cleaning, 
+				pivot tables, and even data visualizations. Given the modest size of the gathered dataset, Excel proved to be well-suited platform for 
+				processing and analyzing the data.
+	<br>
+	<br>
+	<p2>Data Cleaning :</p2> Data Analyst performed data cleaning on a three major datasets which are dailyActivity_merged, hourlySteps_merged, sleepDay_merged. 
+				These datasets are related to the Business Task.
+	<br>
+	<br>
+	<p2>Data Cleaning Process :</p2><br>
+	&emsp;* Find Duplicates Record.<br>
+	&emsp;* Find Unique Values.<br>
+	&emsp;* Find the missing values (Null Values).<br>
+	&emsp;* Find the Typographical Errors.<br>
+	&emsp;* Determine the No. of Rows<br>
+	&emsp;* Determine the No. of Columns<br>
+	&emsp;* Check the date format<br><br>
+	<b>Note:</b> Data Cleaning is Iterative Process 
+	<br>
+	<br>
+	<center>
+	<table id="table2">
+	<caption><b>Table 1:</b> Data Cleaning Documentation Summary</caption>
+	<tr>
+	<th>Data Cleaning Process</th>
+	<th>daily Activity _merged</th>
+	<th>hourly Steps _merged</th>
+	<th>sleeps Day _merged</th>
+	<th>Action Taken</th>
+	</tr>
+	
+	<tr>
+	<th>No. Duplicates</th>
+	<th>0</th>
+	<th>0</th>
+	<th>3</th>
+	<th>Removed</th>
+	</tr>
+	
+	<tr>
+	<th>No. of Unique Values</th>
+	<th>33</th>
+	<th>33</th>
+	<th>24</th>
+	<th>Retain</th>
+	</tr>
+	
+	<tr>
+	<th>No. of Missing Values</th>
+	<th>0</th>
+	<th>0</th>
+	<th>0</th>
+	<th>Retain</th>
+	</tr>
+	
+	<tr>
+	<th>No. of Typographical Errors</th>
+	<th>0</th>
+	<th>0</th>
+	<th>0</th>
+	<th>Retain</th>
+	</tr>
+	
+	<tr>
+	<th>No. of Rows</th>
+	<th>940</th>
+	<th>22,099</th>
+	<th>410</th>
+	<th>Retain</th>
+	</tr>
+	
+	<tr>
+	<th>No. Columns</th>
+	<th>No</th>
+	<th>No</th>
+	<th>No</th>
+	<th>Retain</th>
+	</tr>
+	
+	<tr>
+	<th>Date Format</th>
+	<th>Inconsistent</th>
+	<th>Inconsistent</th>
+	<th>Inconsistent</th>
+	<th>Formatted in a single date format</th>
+	</tr>
+	
+	</table>
+	</center>
+	<br>
+	
+	<p3> Process Phase :</p3> Summary of an analysis <br><br>
+	
+	<center>
+	<table id="table2">
+	<caption><b>Table 2:</b> Number of Days the Device was Used</caption>
+	<tr>
+	<td rowspan="10">daily Activity _merged</td>
+	<th>No. of Users</th>
+	<th>No. of Days</th>
+	<th>Total Days</th>
+	</tr>
+	
+	<tr>
+	<th>1</th>
+	<th>4</th>
+	<th>4</th>
+	</tr>
+	
+	<tr>
+	<th>1</th>
+	<th>18</th>
+	<th>18</th>
+	</tr>
+	
+	<tr>
+	<th>1</th>
+	<th>19</th>
+	<th>19</th>
+	</tr>
+	
+	<tr>
+	<th>1</th>
+	<th>20</th>
+	<th>20</th>
+	</tr>
+	
+	<tr>
+	<th>2</th>
+	<th>26</th>
+	<th>52</th>
+	</tr>
+	
+	<tr>
+	<th>1</th>
+	<th>28</th>
+	<th>28</th>
+	</tr>
+	
+	<tr>
+	<th>2</th>
+	<th>29</th>
+	<th>58</th>
+	</tr>
+	
+	<tr>
+	<th>3</th>
+	<th>30</th>
+	<th>90</th>
+	</tr>
+	
+	<tr>
+	<th>21</th>
+	<th>31</th>
+	<th>651</th>
+	</tr>
+	
+	<tr>
+	<th>Total</th>
+	<th>33</th>
+	<th></th>
+	<th>940</th>
+	</tr>
+	
+	<tr>
+	
+	<td colspan="2">Min. Days Used</th>
+	<td colspan="2">4</th>
+	</tr>
+	
+	<tr>
+	<td colspan="2">Max. Days Used</th>
+	<td colspan="2">31</th>
+	</tr>
+	
+	<tr>
+	<td colspan="2">Weighted Average Days</th>
+	<td colspan="2">28.49</th>
+	</tr>
+	
+	</table>
+	</center>
+	<br>
+	<b>Table 2</b> shows the Number of Days the Device Used. The data was extracted from dailyActivity_merged data. This is used to determine the number of day 
+				that the users used the device within 31 days period.
+	<br>
+	<br>
+	
+	<center>
+	<table id="table2">
+	<caption><b>Table 3:</b> Grouped Days Summary</caption>
+	<tr>
+	<th>Days</th>
+	<th>No. of Users (Frequency)</th>
+	<th>Percentage</th>
+	<th>Classification</th>
+	<th>Weighted Average Days</th>
+	</tr>
+	
+	<tr>
+	<th>1 to 11</th>
+	<th>1</th>
+	<th>3.03</th>
+	<th>Low</th>
+	<th>4</th>
+	</tr>
+	
+	<tr>
+	<th>12 to 21</th>
+	<th>3</th>
+	<th>9.09</th>
+	<th>Moderate</th>
+	<th>19</th>
+	</tr>
+	
+	<tr>
+	<th>22 to 31</th>
+	<th>29</th>
+	<th>87.88</th>
+	<th>High</th>
+	<th>30</th>
+	</tr>
+	
+	<tr>
+	<th><b>Total</b></th>
+	<th><b>33</b></th>
+	<th><b>100</b></b></th>
+	<th></th>
+	</tr>
+	
+	</table>
+	</center>
+	<br>
+	<br>
+	<b>Table 3</b> shows the Grouped Days Summary, it was extracted from dailyActivity_merged data. Data Analyst grouped the days to easily
+				identify the pattern and trends of the data.
+	<br>
+	<br>
+	
+	
+	<center>
+	<table id="table2">
+	<caption><b>Table 4:</b> Grouped Steps Based on Average Total Steps</caption>
+	<tr>
+	<th>Steps</th>
+	<th>No. of Users (Frequency)</th>
+	<th>Percentage</th>
+	<th>Classification</th>
+	
+	</tr>
+	<tr>
+	<th>Less than and 5000</th>
+	<th>7</th>
+	<th>21.88</th>
+	<th>Sedentary</th>
+
+	</tr>
+	<tr>
+	<th>5001 to 7500</th>
+	<th>9</th>
+	<th>28.13</th>
+	<th>Lightly Active</th>
+	
+	</tr>
+	<tr>
+	<th>7501 to 10000</th>
+	<th>9</th>
+	<th>28.13</th>
+	<th>Fairly Active</th>
+
+	</tr>
+	<tr>
+	<th>More than 10000</th>
+	<th>7</th>
+	<th>21.88</th>
+	<th>Very Active</th>
+	
+	</tr>
+	<tr>
+	<th><b>TOTAL</b></th>
+	<th><b>32</b></th>
+	<th><b>100</b></th>
+	<th></th>
+	
+	</tr>
+	</table>
+	</center>
+	<br>
+	<br>
+	<b>Table 4</b> shows the Grouped Steps Based on Average Total Steps of the users. The data was extracted from dailyActivity_merged data. the classification
+	of the steps was based from <a href="https://www.1000steps.org.au/articles/counting-steps/" >www.1000steps.org.au</a>.
+	<br>
+	<br>
+	
+	<center>
+	<table id="table2">
+	<caption><b>Table 5:</b> Average Hours of Daily Device Usage</caption>
+	
+	<tr>
+	<th>Classification of Users</th>
+	<th>Usage Average Hours</th>
+	</tr>
+	
+	<tr>
+	<th>High (22 to 31)</th>
+	<th>19.96</th>
+	</tr>
+	
+	<tr>
+	<th>Moderate (12 to 21)</th>
+	<th>21.37</th>
+	</tr>
+	
+	<tr>
+	<th>Low (1 to 11)</th>
+	<th>21.39</th>
+	</tr>
+	
+	</table>
+	</center>
+	<br>
+	<br>
+	<b>Table 5</b> shows the Average Hours of Daily Device Usage. It was extracted from the dailyActivity_merged data. Data Analyst determined the total number 
+				of hours by calculating the four different columns which are SedentaryMinutes, LightlyActiveMinutes, FairlyActiveMinutes,
+				and VeryActiveMinutes then the total was divided into sixty.
+	<br>
+	<br>
+
+	
+	<center>
+	<table id="table2">
+	<caption><b>Table 6:</b> Logged and Tracked Activity of the Users</caption>
+	
+	<tr>
+	<td rowspan="2">Classification of Users</td>
+	<td colspan="3">Logged and Tracked Activity</td>
+	</tr>
+	
+	<tr>
+	<th>Steps</th>
+	<th>Distance</th>
+	<th>Calorie</th>
+	</tr>
+	
+	<tr>
+	<th>High (22 to 31)</th>
+	<th>804</th>
+	<th>803</th>
+	<th>876</th>
+	</tr>
+	
+	<tr>
+	<th>Moderate (12 to 21)</th>
+	<th>56</th>
+	<th>56</th>
+	<th>56</th>
+	</tr>
+	
+	<tr>
+	<th>Low (1 to 11)</th>
+	<th>3</th>
+	<th>3</th>
+	<th>4</th>
+	</tr>
+	
+	<tr>
+	<th>Total</th>
+	<th>863</th>
+	<th>862</th>
+	<th>936</th>
+	</tr>
+	
+	</table>
+	</center>
+	<br>
+	<br>
+	<b>Table 6</b> shows the Logged and Tracked Activity of the Users. It was extracted from dailyActivity_merged data. Data Analyst determined the logged activity by inspecting
+					the values of TotalSteps, TotalDistance, and Calorie. If the value is 0, it means that the users did not log the activity or 
+					the device does not track the activity.
+	<br>
+	<br>
+	<p3>Share Phase (Data Visualization) : </p3> Supporting Visualization and Key Findings
+	<br>
+	<br>
+	<p2><b>Figure 1:</b> Smart Device Usage Duration</p2>
+	<br>
+	<br>
+	<a href="images/proj/daily_device_usage.png"><img src="images/proj/daily_device_usage.png" alt="Daily Device Usage" class="responsive2" width="600" height="400"></a>
+	<br>
+	<b>Figure 1</b> shows the Smart Device Usage Duration, the data indicates a high level of user engagement with our smart device product, suggesting that our device is effective.
+	<br>
+	<br>
+	<p2><b>Figure 2:</b> No. of Users Based on Grouped Steps</p2>
+	<br>
+	<br>
+	<a href="images/proj/grp_steps.png"><img src="images/proj/grp_steps.png" alt="Daily Device Usage" class="responsive" width="600" height="400"></a>
+	<br>
+	<b>Figure 2</b> shows the No. of Users Based on Grouped Steps. This data illustrates the diverse range of user activity levels, with the majority falling
+					into the classification of fairly and lightly active users.
+	<br>
+	<br>
+	<p2><b>Figure 3:</b> Daily Average Steps of Users</p2>
+	<br>
+	<br>
+	<a href="images/proj/avg_steps.png"><img src="images/proj/avg_steps.png" alt="Daily Device Usage" class="responsive" width="600" height="400"></a>
+	<br>
+	<b>Figure 3</b> shows the Daily Average Steps of Users. Based on the Centers for Disease Control  and Prevention (CDC), 12,000 steps per day had
+					a 65% of lower risk of dying than those who took 4,000 steps per day, 8,000 steps per day had a 51% lower risk of dying.
+					Based on the figure 3, only 7 users meet the recommended steps per day.
+	<br>
+	<br>
+	<p2><b>Figure 4:</b> Daily Average Device Wear Time</p2>
+	<br>
+	<br>
+	<a href="images/proj/wear_time.png"><img src="images/proj/wear_time.png" alt="Daily Device Usage" class="responsive2" width="600" height="400"></a>
+	<br>
+	<b>Figure 4</b> shows the Daily Average Device Wear Time. Based on the data presented, 20 hours is the daily average of hours the device worn by the users.
+					It indicates the highest engagements of the users in the device.
+	<br>
+	<br>
+	<p2><b>Figure 5:</b> Activities Tracked and Logged Records</p2>
+	<br>
+	<br>
+	<a href="images/proj/logged_records.png"><img src="images/proj/logged_records.png" alt="Daily Device Usage" class="responsive2" width="600" height="400"></a>
+	<br>
+	<b>Figure 5</b> shows the Activities Tracked and Logged Records. Based on the data presented, calorie is the most tracked and logged records of the users.
+					
+	<br>
+	<br>
+	<p2><b>Figure 6:</b> Steps vs Distance </p2><br><br>
+	<a href="images/proj/steps_vs_distance.png"><img src="images/proj/steps_vs_distance.png" alt="logo" class="responsive" width="600" height="400"></a>
+	<br>
+	<b>Figure 6</b> shows the relationships between Steps in Thousands (K) and Distance (km). It has an R value of 0.9850 which signifies a strong positive correlation 
+					between Steps and Distance. In simpler terms, as the number of steps taken increases, the distance traveled also increases. With such a 
+					high correlation coefficient, we can use the number of steps as a strong predictor of the distance traveled (and vice versa).
+	<br>
+	<br>
+	<p2><b>Figure 7:</b> kcal vs Distance</p2>
+	<a href="images/proj/kcal_vs_distance.png"><img src="images/proj/kcal_vs_distance.png" alt="logo" class="responsive" width="600" height="400"></a>
+	<br>
+	<b>Figure 7</b> shows the relationship between kcal Burned and Distance (km). It has an R value of 0.5911 which signifies a moderate strong correlation 
+					between kcal burned and distance. This means that the distance traveled increases, the number of calories burned also tend to increase but 
+					the relationship may vary due to additional factors.
+	<br>
+	<br>
+	<p2><b>Figure 8: kcal vs Steps</b> </p2>
+	<a href="images/proj/kcal_vs_steps.png"><img src="images/proj/kcal_vs_steps.png" alt="logo" class="responsive" width="600" height="400"></a>
+	<br>
+	<b>Figure 8</b> shows the relationship between kcal Burned and Steps in Thousands (K). It has an R value of 0.6449 which signifies a moderate strong correlation 
+					between kcal burns and steps. This means that the number of steps taken increases, the number of calories burned tends to increase as well.
+	<br>
+	<br>
+	<p3>Act Phase :</p3> Top High-Level Insights Based on Analysis
+	<br>
+	<br>
+	
+	Overall, based on the findings presented in the article, Data Analyst concluded that the majority of users are actively using the smart device for fitness 
+					tracking, but some users are unable to complete the full 31-day period. The device likely serves as a highly relevant purpose on the user's
+					lives. Wearing the device for extended period suggest the development of daily habit or routine that involves using the device. Bellabeat 
+					may see this as an opportunity to offer additional features or premium services to these highly users. Bellabeat smart device usually used
+					to tracked the burned calorie. So, highlighting the calorie tracking feature in marketing materials and emphasize how users can benefit from it, 
+					such as managing weight, monitoring fitness progress, and setting and achieving health goals.
+					
+	<br>
+	
+	<br>
+	To improve the usage and completion rates of the smart device, it is recommended to further investigate why some users are unable to complete the full 
+					31-day period and address any issues that may arise. It may also be helpful to provide additional support or resources to encourage users 
+					to continue using the device. Additionally, understanding the users' demographics could provide insights into how to tailor the device to 
+					better suit their needs. Finally, providing personalized feedback and recommendations based on the users' activity patterns could help 
+					motivate them to continue using the smart device.
+
+	<!--button-->
+	<div align="right">
+	<a href="portfolio.html"><button class="button button1">X</button></a>
+	</div>
+  </article>
+</th>
+</tr>
+
+  </table>
+ <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+<br>
+<br>
+<br>
+</div>
+
+</html>
+
