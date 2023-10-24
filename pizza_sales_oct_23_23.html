@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sales Dashboard</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+float:left;
+width:33.33%;
+padding:1%;
+}
+
+.row:after {
+content:"";
+clear: both;
+display: table;
+}
+
+img {
+  width: auto%;
+  height: auto;
+}
+
+.responsive{
+	width:100%;
+	max-width: 450px;
+	height:100%;
+	}
+
+.responsive2{
+	width:100%;
+	max-width: 300px;
+	height:100%;
+	}
+	
+.responsive3{
+	width:100%;
+	max-width: 600px;
+	height:100%;
+	}
+
+.button {
+  background-color:rgba(255, 165, 0, 0.75);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  height:50px;
+  width:50px;
+
+}
+
+.button1:hover {
+  background-color:rgba(255, 165, 0, 1);
+  color: white;
+  }
+  
+  
+.button1 {border-radius: 50%;}
+
+
+/* ORIGINAL CODE*/
+
+
+ul.a{
+	display:inline;
+	list-style-type: circle;
+	}
+	
+ul.b{
+	display:inline;
+	list-style-type: square;
+	}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  margin:0;
+
+}
+
+img {
+	
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+
+	}
+#table1{
+	background-color: rgba(253,244,201, 100);
+	 border-radius: 10px;
+	 border: 2px solid orange;
+	}
+
+#table2, td, th{
+	border: 1px solid orange;
+	border-collapse: collapse;
+	font-weight: normal;
+	font-size: 12px;
+	padding: 3px
+	}
+		
+tr{
+	font-weight: normal;	
+	}
+
+td{
+	text-align:center;
+	font-weight: bold;
+	}
+	
+table.center {
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+
+article {
+  float: left;
+   padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  width: 100%;
+  text-align:justify;
+  font-family: "times new roman", times new roman;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: normal;
+	
+}
+p3 {
+font-weight: bold;
+font-size: 20px;
+color: #FF8C00;
+}
+
+p4 {
+font-weight: bold;
+font-size: 12px;
+color: #545454;
+}
+
+p5 {
+font-weight: bold;
+font-size: 16px;
+color: #ff8c00;
+}
+
+h4 {
+font-weight: normal;
+font-size:12px;
+text-align:justify;
+}
+
+
+h5 {
+font-weight: normal;
+font-size:12px;
+text-align:justify;
+}
+
+h6 {
+font-weight: normal;
+font-size:12px;
+text-align:justify;
+}
+
+p2 {
+font-weight: bold;
+font-size: 18px;
+color: #545454;
+}
+
+caption {
+  font-weight: normal;
+  text-align: left;
+  font-size: 15px;
+}
+hr{
+		height:4px;
+		background-color:#545454;
+		border:none;
+		
+		}
+		
+</style>
+
+<body>
+
+<br>
+<br>
+<div class="content">
+<table id="table1" class="center" style="width:90%">
+<tr>
+<th>
+  <article>
+	<div align="right">
+	<a href="portfolio.html"><button class="button button1">X</button></a>
+	</div>
+	
+    <h1><center>Plato's Pizza 2015: A Maven Pizza Challenge<br>
+	</center></h1>
+	<center>
+	A Comprehensive Sales Dashboard Using Microsoft Excel 2016
+	</center>
+	<hr><!-- the division gray line -->
+	<br>
+	
+	<p3>INTRODUCTION</P3> <br>
+	The data presented in this dashboard provides a  comprehensive overview of a specific business's operational performance during the calendar year of 2015.
+					With the duration spanning from January 1 to December 31, encompassing 358 days, the dashboard offers a valuable insight into various facets of the
+					business. From the busiest day and time of operation to the quantity of pizza produced during peak hours, the best and worst-selling pizza and the 
+					average order quantities, these statistics offer detailed snapshot of the business's activities and customer preferences.
+	<br>
+	<br>
+	<p3>DASHBOARD</P3> <br>
+	<p2>Target Audience :</p2> Mario Maven (Manager, Plato's Pizza)
+	<br>
+	<br>
+	<a href="images/dashboard/pizza_sales_oct_23_23.png"><span class="image main"><img src="images/dashboard/pizza_sales_oct_23_23.png" alt="Description of the image" style="width:100%;"/></span></a>
+	<br>
+	<p3>KEY INSIGHTS</P3> <br>
+	<br>
+	<p2> Busiest Day and Time :</p2> Fridays at 12 noon emerged as the peak operating hours, witnessing the highest customer influx.
+	<br>
+	<br>
+	<p2>Total Pizza Made During Peak Hours :</p2> An impressive 6,776 pizzas were crafted during the busiest times, highlighting the efficiency of operations
+					of operations during these hours.
+	<br>
+	<br>
+	<p2>Best Selling and Worst-Selling Pizza :</p2> The Thai Chicken Pizza stood out as the best-selling item on the menu, demonstrating its popularity among
+					customers, on the other hand, The Brie Carrie Pizza struggled to gain traction and ranked as the least popular choice among patrons.
+	<br>
+	<br>
+	<p2>Average Quantity Ordered :</p2> On average, customers ordered 3, 305 pizzas, indicating the overall demand and consumption trends during the year.
+	
+	<hr>
+	<hr>
+	<p2>Note :</p2> For full dynamic dashboard, kindly contact me @:
+	<br>
+	Phone Number: <b>0945-812-22260</b>
+	<br>
+	Email: <b>cbmcamacho26@gmail.com</b><br>
+	LinkedIn: <b>www.linkedin.com/in/cris-bailon-camacho-04883a231</b>
+	
+	
+
+	<!--button-->
+	<div align="right">
+	<a href="portfolio.html"><button class="button button1">X</button></a>
+	</div>
+  </article>
+</th>
+</tr>
+
+  </table>
+ <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+<br>
+<br>
+<br>
+</div>
+
+</html>
+
