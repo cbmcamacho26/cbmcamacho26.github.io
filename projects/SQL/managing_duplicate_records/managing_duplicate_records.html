@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bellabeat Case Study</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+float:left;
+width:33.33%;
+padding:1%;
+}
+
+.row:after {
+content:"";
+clear: both;
+display: table;
+}
+
+img {
+  width: auto%;
+  height: auto;
+}
+
+.responsive{
+	width:100%;
+	max-width: 350px;
+	height:100%;
+	}
+
+.responsive2{
+	width:100%;
+	max-width: 300px;
+	height:100%;
+	}
+
+.button {
+  background-color:rgba(255, 165, 0, 0.75);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  height:50px;
+  width:50px;
+
+}
+
+.button1:hover {
+  background-color:rgba(255, 165, 0, 1);
+  color: white;
+  }
+  
+  
+.button1 {border-radius: 50%;}
+
+.button2 {
+ background-color: rgba(255, 165, 0, .50);
+  border: none;
+  color: white;
+  padding: 5px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 18px;
+  margin: 1px 1px;
+  justify-content:center;
+  align-items:center;
+  cursor: pointer;
+  border: 1px solid orange; /* Add border to the columns */ 
+ border-radius 0px;
+ height:32px;
+ width:280px;
+   
+   
+}
+
+.button2:hover {
+  background-color:rgba(255, 165, 0, 1);
+  color: white;
+  }
+  
+  
+.button2 {border-radius: 40px;}
+
+/* ORIGINAL CODE*/
+
+
+ul.a{
+	display:inline;
+	list-style-type: circle;
+	}
+	
+ul.b{
+	display:inline;
+	list-style-type: square;
+	}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  margin:0;
+
+}
+
+img {
+	
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+
+	}
+#table1{
+	background-color: rgba(253, 244,201,100);
+	 border-radius: 10px;
+	 border: 2px solid orange;
+	}
+
+#table2, td, th{
+	border: 1px solid orange;
+	border-collapse: collapse;
+	font-weight: normal;
+	font-size: 12px;
+	padding: 3px
+	}
+		
+tr{
+	font-weight: normal;	
+	}
+
+td{
+	text-align:center;
+	font-weight: bold;
+	}
+	
+table.center {
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+
+article {
+  float: left;
+   padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  width: 100%;
+  text-align:justify;
+  font-family: "times new roman", times new roman;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: normal;
+	
+}
+p3 {
+font-weight: bold;
+font-size: 20px;
+color: #FF8C00;
+}
+
+p4 {
+
+font-size: 16px;
+color: #545454;
+}
+
+p5 {
+font-weight: bold;
+font-size: 16px;
+color: #ff8c00;
+}
+
+h4 {
+font-weight: normal;
+font-size:12px;
+text-align:justify;
+}
+
+
+h5 {
+font-weight: normal;
+font-size:12px;
+text-align:justify;
+}
+
+h6 {
+font-weight: normal;
+font-size:12px;
+text-align:justify;
+}
+
+p2 {
+font-weight: bold;
+font-size: 18px;
+color: #545454;
+}
+
+caption {
+  font-weight: normal;
+  text-align: left;
+  font-size: 15px;
+}
+hr{
+		height:4px;
+		background-color:#545454;
+		border:none;
+		
+		}
+		
+</style>
+
+<body>
+
+<br>
+<br>
+<div class="content">
+<table id="table1" class="center" style="width:90%">
+<tr>
+<th>
+  <article>
+	<div align="right">
+	<!--<a href="index.html"><button class="button button1">X</button></a>-->
+	</div>
+	
+	<center><h1>Managing Duplicate Records in Normalized Database Using PostgreSQL<h2></center>
+	<center>Preview</center>
+	<img src="managing_duplicate_records.png" alt="logo" class="responsive" width="600" height="400"></a><br>
+	<center><a href="managing_duplicate_records.pdf" class="button2 button2">VIEW FULL CONTENT HERE</a></center>
+	
+	<hr>
+	
+								<p3> Task Summary </p3> <br><br>
+								<p3> Task Objectives: </p3>
+								<ul>
+								<p4><li>Identify duplicate records within the PostgreSQL database.</li>
+								<li>Develop SQL queries or scripts to consolidate duplicate records based on predefined criteria.</li>
+								<li>Utilize PostgreSQL features such as DISTINCT, GROUP BY, and window functions to detect and manage duplicates efficiently.</li>
+								<li>Document the duplicate management process for future reference and training purposes.</li>
+								</p4>
+								</ul>
+								<p3>Key Takeaways:</p3>
+								<p4>
+								<ul>
+								<li>Duplicate records can lead to inconsistencies and inaccuracies in data analysis and reporting.</li>
+								<li>Duplicate records consume additional storage space, impacting database performance and scalability.</li>
+								<li>Ensure you have a backup before updating the table particularly when deleting multiple records.</li>
+								<li>Documentation is invaluable, particularly when facing errors, syntax lapses, or encountering new concepts beyond the course material.</li>
+								<li>In PostgreSQL, there are many solutions available for various problems. Your responsibility is to explore and document them accordingly for future reference.</li>
+								</p4>
+								</ul>
+								<hr>
+								<p3>
+	<center><a href="source_code.zip" class="button2 button2" download>DOWNLOAD RESOURCES</a></center>	
+	
+	<p4>For Inquiries, Please contack me at: <br>
+	Phone No.: <a href="tel:+639458122260">09458122260</a> <br>
+	Linked In: <a href="https://www.linkedin.com/in/cris-bailon-camacho-04883a231">www.linkedin.com/in/cris-bailon-camacho-04883a231</a> <br>
+	Email: <a href="mailto:cbmcamacho26@gamil.com">cbmcamacho26@gmail.com</a>
+	</p4>
+								
+								
+	<!--button-->
+	<!--<div align="right">
+	<a href="portfolio.html"><button class="button button1">X</button></a>
+	</div>-->
+  </article>
+</th>
+</tr>
+
+  </table>
+ 
+ <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+<br>
+<br>
+<br>
+</div>
+
+</html>
+
